@@ -1,16 +1,14 @@
 # Adafruit HDC1000 Library [![Build Status](https://travis-ci.org/adafruit/Adafruit_HDC1000_Library.svg?branch=master)](https://travis-ci.org/adafruit/Adafruit_HDC1000_Library)
 
-This is a library for the HDC1008 Humidity + Temp sensor
-
-Designed specifically to work with the HDC1008 breakout in the Adafruit shop
-  ----> https://www.adafruit.com/products/2635
+This is a library for the HDC1010/HDC1080 Humidity + Temp sensor a minor
+update of the older Not Recommended for New Designs (NRND) HDC1008 sensor
 
 These displays use I2C to communicate, 2 pins are required to interface
 Adafruit invests time and resources providing this open source code,
 please support Adafruit and open-source hardware by purchasing
 products from Adafruit!
 
-Written by Limor Fried/Ladyada for Adafruit Industries.
+Written by Limor Fried/Ladyada updated for Adafruit Industries.
 BSD license, all text above must be included in any redistribution
 
 Check out the links above for our tutorials and wiring diagrams
@@ -36,6 +34,7 @@ Atmega328 @ 12MHz  |      X       |             |            |
 Atmega32u4 @ 16MHz |      X       |             |            | 
 Atmega32u4 @ 8MHz  |      X       |             |            | 
 ESP8266            |      X       |             |            | 
+ESP32              |      X       |             |            | Use SDA/SCL on pins 20 &amp; 21
 Atmega2560 @ 16MHz |      X       |             |            | Use SDA/SCL on pins 20 &amp; 21
 ATSAM3X8E          |      X       |             |            | Use SDA/SCL on pins 20 &amp; 21
 ATSAM21D           |      X       |             |            | Use SDA and SCL pins.
