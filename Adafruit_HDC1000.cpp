@@ -30,7 +30,7 @@ boolean Adafruit_HDC1000::begin(uint8_t addr) {
   
   reset();
   if (read16(HDC1000_MANUFID) != 0x5449) return false;
-  if (read16(HDC1000_DEVICEID) != 0x1000) return false;
+  if (read16(HDC1000_DEVICEID) != 0x1050) return false;
   return true;
 }
 
@@ -57,7 +57,7 @@ float Adafruit_HDC1000::readTemperature(void) {
 
 float Adafruit_HDC1000::readHumidity(void) {
 
-  float hum = (read32(HDC1000_TEMP, 20) & 0xFFFF);
+  float hum = (read32(HDC1000_HUMID, 20) >> 16);
 
   hum /= 65536;
   hum *= 100;
